@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/1bbbc1ee96.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<title>Brand</title>
-	
+
 </head>
+
 <body>
 	<div class="wrapper">
 		<header class="header">
@@ -15,13 +19,39 @@
 				<div class="logo">Bran<span>d</span></div>
 				<div class="header__search">
 					<form class="header__searchform">
-						<div class="header__search-browse">Browse <i class="fas fa-caret-down"></i></div>
+						<button type="button" class="header__search-browse btn dropdown-toggle" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							Browse
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item disabled text-uppercase" href="#">women</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Dresses</a>
+							<a class="dropdown-item" href="#">Tops</a>
+							<a class="dropdown-item" href="#">Sweaters/Knits</a>
+							<a class="dropdown-item" href="#">Jackets/Coats</a>
+							<a class="dropdown-item" href="#">Blazers</a>
+							<a class="dropdown-item" href="#">Denim</a>
+							<a class="dropdown-item" href="#">Skirts/Shorts</a>
+							<a class="dropdown-item" href="#">Accessories </a>
+							<a class="dropdown-item disabled text-uppercase" href="#">men</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Tees/Tank tops</a>
+							<a class="dropdown-item" href="#">Shirts/Polos</a>
+							<a class="dropdown-item" href="#">Sweaters</a>
+							<a class="dropdown-item" href="#">Sweatshirts/Hoodies</a>
+							<a class="dropdown-item" href="#">Blazers</a>
+							<a class="dropdown-item" href="#">Jackets/vests</a>
+							<input class="header__search-input" name="search" type="text" placeholder="Search for Item...">
+							<button class="header__search-buton"><i class="fas fa-search"></i></button>
+						</div>
 						<input class="header__search-input" name="search" type="text" placeholder="Search for Item...">
 						<button class="header__search-buton"><i class="fas fa-search"></i></button>
 					</form>
 				</div>
 				<div class="header__cart">
-					<a href="cart.html" class="header__cart-a"><img class="header__cart-img" src="img/headerCart.png" alt="headerCart"></a>
+					<a href="cart.html" class="header__cart-a"><img class="header__cart-img" src="img/headerCart.png"
+							alt="headerCart"></a>
 				</div>
 				<div class="header__account">
 					<button class="header__btn">My Account <i class="fas fa-caret-down"></i></button>
@@ -29,6 +59,25 @@
 			</div>
 			<div class="header__line"></div>
 			<div class="header__footer">
+				<nav class="header__burger navbar navbar-expand-lg navbar-light bg-light text-uppercase">
+					<div class="container">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+							aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<div class="navbar-nav">
+								<a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+								<a class="nav-item nav-link" href="#">Man</a>
+								<a class="nav-item nav-link" href="#">Women</a>
+								<a class="nav-item nav-link" href="#">Kids</a>
+								<a class="nav-item nav-link" href="#">Accoseriese</a>
+								<a class="nav-item nav-link" href="#">Featured</a>
+								<a class="nav-item nav-link" href="#">Hot Deals</a>
+							</div>
+						</div>
+					</div>
+				</nav>
 				<nav class="header__nav">
 					<a href="#">Home</a>
 					<a href="#">Man</a>
@@ -87,7 +136,7 @@
 					<div class="head-text">
 						<h2>Featured Items</h2>
 					</div>
-					<div class="sub-text">Shop for items based on what we featured in this week</div>					
+					<div class="sub-text">Shop for items based on what we featured in this week</div>
 				</div>
 				<div class="products">
 					<div class="products__item">
@@ -101,7 +150,7 @@
 							<img class="products__img" src="img/product1.jpg" alt="product1">
 						</div>
 						<div class="products__bottom">
-							<div class="products__name">Mango  People  T-shirt</div>
+							<div class="products__name">Mango People T-shirt</div>
 							<div class="products__price">$52.00</div>
 						</div>
 					</div>
@@ -116,7 +165,7 @@
 							<img class="products__img" src="img/product2.jpg" alt="product2">
 						</div>
 						<div class="products__bottom">
-							<div class="products__name">Mango  People  T-shirt</div>
+							<div class="products__name">Mango People T-shirt</div>
 							<div class="products__price">$52.00</div>
 						</div>
 					</div>
@@ -131,7 +180,7 @@
 							<img class="products__img" src="img/product3.jpg" alt="product3">
 						</div>
 						<div class="products__bottom">
-							<div class="products__name">Mango  People  T-shirt</div>
+							<div class="products__name">Mango People T-shirt</div>
 							<div class="products__price">$52.00</div>
 						</div>
 					</div>
@@ -146,7 +195,7 @@
 							<img class="products__img" src="img/product4.jpg" alt="product4">
 						</div>
 						<div class="products__bottom">
-							<div class="products__name">Mango  People  T-shirt</div>
+							<div class="products__name">Mango People T-shirt</div>
 							<div class="products__price">$52.00</div>
 						</div>
 					</div>
@@ -161,7 +210,7 @@
 							<img class="products__img" src="img/product5.jpg" alt="product5">
 						</div>
 						<div class="products__bottom">
-							<div class="products__name">Mango  People  T-shirt</div>
+							<div class="products__name">Mango People T-shirt</div>
 							<div class="products__price">$52.00</div>
 						</div>
 					</div>
@@ -176,7 +225,7 @@
 							<img class="products__img" src="img/product6.jpg" alt="product6">
 						</div>
 						<div class="products__bottom">
-							<div class="products__name">Mango  People  T-shirt</div>
+							<div class="products__name">Mango People T-shirt</div>
 							<div class="products__price">$52.00</div>
 						</div>
 					</div>
@@ -191,7 +240,7 @@
 							<img class="products__img" src="img/product7.jpg" alt="product7">
 						</div>
 						<div class="products__bottom">
-							<div class="products__name">Mango  People  T-shirt</div>
+							<div class="products__name">Mango People T-shirt</div>
 							<div class="products__price">$52.00</div>
 						</div>
 					</div>
@@ -206,75 +255,81 @@
 							<img class="products__img" src="img/product8.jpg" alt="product8">
 						</div>
 						<div class="products__bottom">
-							<div class="products__name">Mango  People  T-shirt</div>
+							<div class="products__name">Mango People T-shirt</div>
 							<div class="products__price">$52.00</div>
 						</div>
 					</div>
-				<button class="featured-items__button">
+				</div>
+				<button class="featured-items__button products__button">
 					Browse All Product
 					<img src="img/arrowRight.png" alt="arrow">
 				</button>
 			</div>
-		</div>
-		<div class="offer-women container">
-			<div class="offer-woman__banner">
-				<div class="offer-woman__banner-text">
-					<div>30% <span>OFFER</span></div>
-					<div>FOR WOMEN</div>
+			<div class="offer-women container">
+				<div class="offer-women__banner">
+					<div class="offer-women__banner-text">
+						<div>30% <span>OFFER</span></div>
+						<div>FOR WOMEN</div>
+					</div>
+				</div>
+				<div class="offer-women__details">
+					<section class="offer-women__item">
+						<h3 class="offer-women__header-text">Free Delivery</h3>
+						<div class="offer-women__text">Worldwide delivery on all. Authorit tively morph next-generation innov
+							tion with extensive models.</div>
+					</section>
+					<section class="offer-women__item">
+						<h3 class="offer-women__header-text">Sales & discounts</h3>
+						<div class="offer-women__text">Worldwide delivery on all. Authorit tively morph next-generation innov
+							tion with extensive models.</div>
+					</section>
+					<section class="offer-women__item">
+						<h3 class="offer-women__header-text">Quality assurance</h3>
+						<div class="offer-women__text">Worldwide delivery on all. Authorit tively morph next-generation innov
+							tion with extensive models.</div>
+					</section>
 				</div>
 			</div>
-			<div class="offer-woman__details">
-				<section class="offer-woman__item">
-					<h3 class="offer-woman__header-text">Free Delivery</h3>
-					<div class="offer-woman__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</div>
-				</section>
-				<section class="offer-woman__item">
-					<h3 class="offer-woman__header-text">Sales & discounts</h3>
-					<div class="offer-woman__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</div>
-				</section>
-				<section class="offer-woman__item">
-					<h3 class="offer-woman__header-text">Quality assurance</h3>
-					<div class="offer-woman__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</div>
-				</section>
-			</div>
-		</div>
-		<div class="subscribe-wrap">
-			<div class="subscribe container">
-				<div class="subscribe__left">
-					<div class="subscribe__review">
-						<div class="subscribe__photo">
-							<img src="img/reviewPerson.png" alt="photo">
-						</div>
-						<div class="subscribe__text">
-							<blockquote>
-								“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-							</blockquote>
-							<div class="subscribe__name">Bin Burhan</div>
-							<div class="subscribe__adress">Dhaka, Bd</div>
-							<div class="subscribe__switch">
-								<div class="subscribe__switch-inactive"></div>
-								<div class="subscribe__switch-inactive subscribe__switch-active"></div>
-								<div class="subscribe__switch-inactive"></div>
+			<div class="subscribe-wrap">
+				<div class="subscribe container">
+					<div class="subscribe__left">
+						<div class="subscribe__review">
+							<div class="subscribe__photo">
+								<img src="img/reviewPerson.png" alt="photo">
+							</div>
+							<div class="subscribe__text">
+								<blockquote>
+									“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+									Aliquam condimentum mattis neque sed pretium”
+								</blockquote>
+								<div class="subscribe__name">Bin Burhan</div>
+								<div class="subscribe__adress">Dhaka, Bd</div>
+								<div class="subscribe__switch">
+									<div class="subscribe__switch-inactive"></div>
+									<div class="subscribe__switch-inactive subscribe__switch-active"></div>
+									<div class="subscribe__switch-inactive"></div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="subscribe__delimiter"></div>
-				<div class="subscribe__right">
-					<div class="subscribe__header">Subscribe</div>
-					<div class="subscribe__right-text">FOR OUR NEWLETTER AND PROMOTION</div>
-					<form action="" class="subscribe__form">
-						<input type="email" placeholder="Enter Your Email">
-						<button>Subscribe</button>
-					</form>
+					<div class="subscribe__delimiter"></div>
+					<div class="subscribe__right">
+						<div class="subscribe__header">Subscribe</div>
+						<div class="subscribe__right-text">FOR OUR NEWLETTER AND PROMOTION</div>
+						<form action="" class="subscribe__form">
+							<input type="email" placeholder="Enter Your Email">
+							<button>Subscribe</button>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 		<footer class="footer container">
 			<div class="footer__brand">
 				<div class="logo">Bran<span>d</span></div>
-				<div class="footer__text-1">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </div>
+				<div class="footer__text-1">Objectively transition extensive data rather than cross functional solutions.
+					Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+					expanded array of processes and cross-unit partnerships. </div>
 				<div class="footer__text-2">Efficiently plagiarize 24/365 action items and focused infomediaries.
 					Distinctively seize superior initiatives for wireless technologies. Dynamically optimize</div>
 			</div>
@@ -302,11 +357,12 @@
 				<a href="#">Apparel</a>
 				<a href="#">Brows All</a>
 			</div>
+		
 		</footer>
 		<div class="copyright">
 			<div class="copyright__wrap container">
 				<div class="copyright__copyright">
-					&copy; 2017  Brand  All Rights Reserved.
+					&copy; 2017 Brand All Rights Reserved.
 				</div>
 				<div class="copyright__link">
 					<a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -317,5 +373,15 @@
 				</div>
 			</div>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"></script>
 </body>
+
 </html>
