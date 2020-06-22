@@ -129,24 +129,7 @@
 	@media (max-width: 768px) {
 		justify-content: space-between;
 	}
-	button {
-		padding: 15px;
-		border: 1px solid #ffffff;
-		background: none;
-		color: white;
-		font-size: 13px;
-		font-weight: 700;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
-		@media (max-width: 768px) {
-			margin: 30px auto 50px !important;
-		}
-		img {
-			margin-right: 10px;
-		}
-	}
+	
 	&__item {
 		width: 263px;
 		height: 364px;
@@ -179,6 +162,24 @@
 		background: rgba(0, 0, 0, 0.5);
 		display: none;
 		position: absolute;
+		button {
+			padding: 15px;
+			border: 1px solid #ffffff;
+			background: none;
+			color: white;
+			font-size: 13px;
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			@media (max-width: 768px) {
+				margin: 30px auto 50px !important;
+			}
+			img {
+				margin-right: 10px;
+			}
+		}
 		}
 	&__img {
 		width: 100%;
