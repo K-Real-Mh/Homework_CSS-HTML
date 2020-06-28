@@ -5,6 +5,12 @@
 	&--grey {
 		height: 777px;
 		background-color: #f7f7f7;
+		@media (max-width: 992px) {
+			height: 500px;
+		}
+		@media (max-width: 768px) {
+			height: 390px;
+		}
 	}
 }
 
@@ -40,6 +46,12 @@
 	height: 763px;
 	display: flex;
 	justify-content: center;
+	@media (max-width: 992px) {
+		height: 600px;
+	}
+	@media (max-width: 768px) {
+
+	}
 }
 
 .product-description {
